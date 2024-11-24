@@ -6,15 +6,137 @@
   <title>Home Page</title>
   <!-- Bootstrap CSS (CDN) -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #E8D8C4; /* Light cream color from palette */
+    }
+
+    .navbar {
+      background-color: #6D2932; /* Dark red color from palette */
+    }
+
+    .navbar-brand {
+      color: white;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: #C7B7A3; /* Light beige on hover */
+    }
+
+    .navbar-toggler-icon {
+      background-color: #C7B7A3; /* Light beige for the navbar toggler icon */
+    }
+
+    .banner {
+      background-image: url('https://t4.ftcdn.net/jpg/05/77/79/67/360_F_577796709_RnfoWC88Q60VMLvuiJ0SVcwq16Ec4YDa.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .banner h1 {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    }
+
+    .banner p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    .banner .btn-primary {
+      background-color: #561C24; /* Dark red from palette */
+      border-color: #561C24;
+      padding: 10px 20px;
+      font-size: 1.1em;
+    }
+
+    .banner .btn-primary:hover {
+      background-color: #6D2932; /* Darker red on hover */
+      border-color: #6D2932;
+    }
+
+    .container {
+      margin-top: 30px;
+      max-width: 960px;
+    }
+
+    h1 {
+      color: #561C24; /* Dark red from palette */
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      text-align: center;
+      color: #6D2932; /* Dark red from palette */
+    }
+
+    /* Content Section */
+    .content-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .content-section img {
+      width: 50%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .content-text {
+      width: 50%;
+      padding: 20px;
+    }
+
+    .content-text h2 {
+      color: #561C24;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    .content-text p {
+      color: #6D2932;
+      font-size: 1.1em;
+    }
+
+    /* Optional responsive design for smaller screens */
+    @media (max-width: 768px) {
+      .content-section {
+        flex-direction: column;
+      }
+
+      .content-section img, .content-text {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
-<body style="font-family: Arial, sans-serif;">
+<body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 10px 30px;">
     <a class="navbar-brand" href="#" style="display: flex; align-items: center;">
       <!-- Logo from Canva URL -->
       <img src="https://marketplace.canva.com/EAFn6tY7PzE/1/0/1600w/canva-brown-cream-retro-coffee-shop-badge-logo-8uaRx0YG9uk.jpg" alt="Logo" style="width: 40px; height: auto; margin-right: 10px;">
-      My Website
+      Coffee Shop
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,11 +159,154 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
-  <div class="container mt-5" style="max-width: 960px; margin: 0 auto;">
-    <h1 style="color: #343a40; text-align: center;">Welcome to Our Website!</h1>
-    <p style="font-size: 1.1em; text-align: center; color: #555;">This is the homepage of your awesome website. Explore the other pages using the navbar above.</p>
+  <!-- Banner Section -->
+  <div class="banner">
+    <div>
+      <h1>Welcome to Our Coffee Shop</h1>
+      <p>Discover the finest blends and a cozy atmosphere</p>
+      <a href="services.html" class="btn btn-primary">Explore Our Menu</a>
+    </div>
   </div>
+
+  <!-- Image and Content Sections -->
+  <!-- Section 1: Image on Left -->
+  <div class="container content-section">
+    <div class="content-text">
+      <h2>Premium Coffee for Every Taste</h2>
+      <p>Whether you're looking for a bold espresso or a smooth cappuccino, we have something for every coffee lover. Our beans are freshly roasted to bring out the rich, complex flavors in every cup. Come experience the art of coffee at its finest!</p>
+    </div>
+    <img src="https://i.pinimg.com/736x/b0/10/c5/b010c587e6f19bc343425e14dc5f1c1a.jpg" alt="Premium Coffee">
+  </div>
+
+  <!-- Section 2: Image on Left -->
+  <div class="container content-section">
+    <img src="https://png.pngtree.com/thumb_back/fw800/background/20240614/pngtree-cup-of-coffee-with-piece-of-cake-image_15754547.jpg" alt="Coffee and Cake">
+    <div class="content-text">
+      <h2>Sweet Treats to Complement Your Brew</h2>
+      <p>Indulge in our selection of delicious pastries and cakes, freshly baked to pair perfectly with your coffee. From buttery croissants to rich chocolate cakes, every bite is a moment of joy.</p>
+    </div>
+  </div>
+
+  <!-- Section 3: Image on Left -->
+  <div class="container content-section">
+    <div class="content-text">
+      <h2>Start Your Day with a Smile</h2>
+      <p>Our morning brews are sure to give you the perfect start to your day. Whether it's a strong espresso or a comforting latte, you'll find the perfect cup to jumpstart your morning routine.</p>
+    </div>
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/038/448/603/small_2x/ai-generated-croissant-with-coffee-beans-on-wooden-table-photo.jpg" alt="Croissant and Coffee">
+  </div>
+
+  <!-- Section 4: Image on Left -->
+  <div class="container content-section">
+    <img src="https://lorcoffee.com/cdn/shop/articles/Cappuccino-exc.jpg?v=1684870907" alt="Cappuccino">
+    <div class="content-text">
+      <h2>Coffee That Brings People Together</h2>
+      <p>Our cozy coffee shop is the perfect place to relax, work, or catch up with friends. Enjoy a cup of our finest brew while soaking in the warm ambiance and friendly atmosphere.</p>
+    </div>
+  </div>
+
+  <!-- Back to Top Button Section -->
+<div class="container-fluid text-center my-5">
+    <button id="backToTop" class="btn btn-dark" 
+            style="font-size: 1.5em; padding: 20px 0; width: 100%; display: none; border-radius: 50px; background-color: #561C24; border: none; color: white;">
+      Back to Top
+    </button>
+  </div>
+  
+  <!-- JavaScript to Show and Scroll Back to Top -->
+  <script>
+    // Get the button
+    const backToTopButton = document.getElementById('backToTop');
+  
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        backToTopButton.style.display = "block";
+      } else {
+        backToTopButton.style.display = "none";
+      }
+    };
+  
+    // When the user clicks the button, scroll to the top of the document
+    backToTopButton.onclick = function() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+<!-- Footer Section -->
+<footer style="background-color: #561C24; color: white; padding: 40px 0;">
+    <div class="container">
+      <div class="row">
+        <!-- First Column: Logo, Description, Contact, Social Media -->
+        <div class="col-md-4">
+          <!-- Logo -->
+          <a href="#" class="navbar-brand d-block mb-3" style="color: white;">
+            <img src="https://marketplace.canva.com/EAFn6tY7PzE/1/0/1600w/canva-brown-cream-retro-coffee-shop-badge-logo-8uaRx0YG9uk.jpg" alt="Logo" style="width: 60px; height: auto;">
+            Coffee Shop
+          </a>
+          
+          <!-- Short Business Description -->
+          <p style="color: white;">We serve the finest blends of coffee, pastries, and desserts in a cozy and welcoming environment. Join us for your daily dose of caffeine!</p>
+  
+          <!-- Contact Us Button -->
+          <a href="contact.html" class="btn btn-light" style="background-color: #6D2932; color: white; padding: 10px 20px; border-radius: 5px;">Contact Us</a>
+  
+          <!-- Social Media Icons -->
+          <div class="mt-3">
+            <a href="https://www.facebook.com" class="text-white" style="margin-right: 15px; font-size: 1.5em;">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com" class="text-white" style="margin-right: 15px; font-size: 1.5em;">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://twitter.com" class="text-white" style="font-size: 1.5em;">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+  
+        <!-- Second Column: Business Details -->
+        <div class="col-md-4">
+          <h4 style="color: white;">Business Details</h4>
+          
+          <!-- Address -->
+          <p style="color: white;"><strong>Address:</strong> 123 Coffee Street, City, Country</p>
+          
+          <!-- Phone Number -->
+          <p style="color: white;"><strong>Phone:</strong> +1 (555) 123-4567</p>
+  
+          <!-- Hours of Operation -->
+          <p style="color: white;"><strong>Hours of Operation:</strong></p>
+          <p style="color: white;">Mon - Fri: 7:00 AM - 8:00 PM</p>
+          <p style="color: white;">Sat - Sun: 8:00 AM - 6:00 PM</p>
+        </div>
+  
+        <!-- Third Column: Quick Links -->
+        <div class="col-md-4">
+          <h4 style="color: white;">Quick Links</h4>
+          <ul style="list-style-type: none; padding-left: 0;">
+            <li><a href="index.html" class="text-white" style="color: white;">Home</a></li>
+            <li><a href="services.html" class="text-white" style="color: white;">Services</a></li>
+            <li><a href="about.html" class="text-white" style="color: white;">About Us</a></li>
+            <li><a href="contact.html" class="text-white" style="color: white;">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome for Social Media Icons (Add this in the <head> section of your HTML file) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  
+  <!-- Font Awesome for Social Media Icons (Add this in the <head> section of your HTML file) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+  <!-- Font Awesome for Social Media Icons (Add this in the <head> section of your HTML file) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
+
+  
 
   <!-- Bootstrap JS and dependencies -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
