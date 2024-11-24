@@ -1,0 +1,33 @@
+/* Custom CSS */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #343a40;
+}
+
+.container p {
+  color: #555;
+}
+
+/* Form styling */
+form {
+  margin-top: 20px;
+}
+
+form .form-group label {
+  font-weight: bold;
+}
+
+form .form-control {
+  border-radius: 5px;
+}
+
+form .btn {
+  border-radius: 5px;
+}
